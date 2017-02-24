@@ -42,7 +42,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @user.destroy
     flash[:danger] = "User and all articles created by user have been deleted"
-    redirect_to user_path
+    redirect_to users_path
   end
 
   private
