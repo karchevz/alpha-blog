@@ -13,6 +13,7 @@ class CategoriesControllerTest < ActionController::TestCase
 
   test "should get new" do
     #this allows for the session hash to be accessed
+    #session hash is accessible only at the controller level
     session[:user_id] = @user.id
     get :new
     assert_response :success
